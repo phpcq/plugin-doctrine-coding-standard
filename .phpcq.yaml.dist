@@ -1,6 +1,5 @@
 phpcq:
   repositories:
-    - repository.json
     - https://phpcq.github.io/repository/repository.json
   directories:
     - src
@@ -32,9 +31,6 @@ phpcq:
       version: ^1.0
       signed: false
     composer-normalize:
-      version: ^1.0
-      signed: false
-    doctrine-coding-standard:
       version: ^1.0
       signed: false
   trusted-keys:
