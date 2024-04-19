@@ -1,0 +1,34 @@
+{
+  "name": "phpcq/plugin-doctrine-coding-standard",
+  "description": "Provides the doctrine coding standard as phpcq plugin",
+  "license": "MIT",
+  "type": "phpcq-plugin",
+  "authors": [
+    {
+      "name": "Christian Schiffler",
+      "email": "c.schiffler@cyberspectrum.de",
+      "homepage": "https://cyberspectrum.de",
+      "role": "lead"
+    },
+    {
+      "name": "David Molineus",
+      "email": "david.molineus@netzmacht.de",
+      "homepage": "https://netzmacht.de",
+      "role": "lead"
+    }
+  ],
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "ext-dom": "*",
+    "phpcq/plugin-api": "^1.0@dev"
+  },
+  "require-dev": {
+    "phpcq/runner-bootstrap": "^1.0@dev",
+    "phpcq/schema": "^1.0@dev"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Phpcq\\CodingStandardPluginTest\\": "tests"
+    }
+  }
+}

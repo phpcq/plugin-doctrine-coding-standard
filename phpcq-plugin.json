@@ -1,0 +1,15 @@
+{
+  "name": "doctrine-coding-standard",
+  "type": "php-file",
+  "url": "src/plugin.php",
+  "api-version": "1.0.0",
+  "requirements": {
+    "php": {
+      "php": "^7.4 || ^8.0",
+      "ext-dom": "*"
+    },
+    "composer": {
+      "doctrine/coding-standard": "^9.0 || ^10.0 || ^11.0 || ^12.0"
+    }
+  }
+}
