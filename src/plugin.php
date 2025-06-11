@@ -9,11 +9,13 @@ use Phpcq\PluginApi\Version10\EnvironmentInterface;
 use Phpcq\PluginApi\Version10\Exception\InvalidConfigurationException;
 
 return new class implements EnricherPluginInterface {
+    #[Override]
     public function getName(): string
     {
         return 'doctrine-coding-standard';
     }
 
+    #[Override]
     public function describeConfiguration(PluginConfigurationBuilderInterface $configOptionsBuilder): void
     {
         $configOptionsBuilder
@@ -27,6 +29,7 @@ return new class implements EnricherPluginInterface {
         ;
     }
 
+    #[Override]
     public function enrich(
         string $pluginName,
         string $pluginVersion,
