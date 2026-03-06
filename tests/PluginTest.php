@@ -17,7 +17,7 @@ final class PluginTest extends TestCase
     public function testDescribeConfiguration(): void
     {
         $plugin  = $this->loadPlugin();
-        $builder = $this->getMockForAbstractClass(PluginConfigurationBuilderInterface::class);
+        $builder = $this->createMock(PluginConfigurationBuilderInterface::class);
         $builder
             ->expects($this->once())
             ->method('describeEnumOption')
@@ -32,16 +32,16 @@ final class PluginTest extends TestCase
     public function testPhpcsEnrichment(): void
     {
         $plugin        = $this->loadPlugin();
-        $configuration = $this->getMockForAbstractClass(PluginConfigurationInterface::class);
+        $configuration = $this->createMock(PluginConfigurationInterface::class);
         $configuration
             ->expects($this->once())
             ->method('getString')
             ->with('phpcs_standard')
             ->willReturn('override');
 
-        $environment   = $this->getMockForAbstractClass(EnvironmentInterface::class);
+        $environment   = $this->createMock(EnvironmentInterface::class);
 
-        $projectConfiguration = $this->getMockForAbstractClass(ProjectConfigInterface::class);
+        $projectConfiguration = $this->createMock(ProjectConfigInterface::class);
         $projectConfiguration
             ->expects($this->once())
             ->method('getProjectRootPath')
@@ -77,16 +77,16 @@ final class PluginTest extends TestCase
     public function testConfiguredPhpcsEnrichment(): void
     {
         $plugin        = $this->loadPlugin();
-        $configuration = $this->getMockForAbstractClass(PluginConfigurationInterface::class);
+        $configuration = $this->createMock(PluginConfigurationInterface::class);
         $configuration
             ->expects($this->once())
             ->method('getString')
             ->with('phpcs_standard')
             ->willReturn('ignore');
 
-        $environment   = $this->getMockForAbstractClass(EnvironmentInterface::class);
+        $environment   = $this->createMock(EnvironmentInterface::class);
 
-        $projectConfiguration = $this->getMockForAbstractClass(ProjectConfigInterface::class);
+        $projectConfiguration = $this->createMock(ProjectConfigInterface::class);
         $projectConfiguration
             ->expects($this->once())
             ->method('getProjectRootPath')
