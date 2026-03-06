@@ -18,7 +18,7 @@
     }
   ],
   "require": {
-    "php": "^7.4 || ^8.0",
+    "php": "^8.2",
     "ext-dom": "*",
     "phpcq/plugin-api": "^1.0"
   },
