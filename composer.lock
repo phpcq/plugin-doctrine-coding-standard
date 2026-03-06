@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "50e3aa2e734d40b36d02a1138053fd1c",
+    "content-hash": "cb44d94a60571aa2ab29e182301c4d43",
     "packages": [
         {
             "name": "phpcq/plugin-api",
-            "version": "dev-master",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpcq/plugin-api.git",
@@ -27,7 +27,6 @@
             "require-dev": {
                 "phpcq/runner-bootstrap": "^1.0@dev"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -140,7 +139,7 @@
         },
         {
             "name": "phpcq/schema",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpcq/schema.git",
@@ -152,7 +151,6 @@
                 "reference": "3c0ce7ec8e4399b4800b418efe9300210c253cbe",
                 "shasum": ""
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -198,9 +196,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "phpcq/plugin-api": 20,
-        "phpcq/runner-bootstrap": 20,
-        "phpcq/schema": 20
+        "phpcq/runner-bootstrap": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

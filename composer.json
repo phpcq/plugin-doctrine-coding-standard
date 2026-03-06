@@ -20,11 +20,11 @@
   "require": {
     "php": "^7.4 || ^8.0",
     "ext-dom": "*",
-    "phpcq/plugin-api": "^1.0@dev"
+    "phpcq/plugin-api": "^1.0"
   },
   "require-dev": {
     "phpcq/runner-bootstrap": "^1.0@dev",
-    "phpcq/schema": "^1.0@dev"
+    "phpcq/schema": "^1.0"
   },
   "autoload-dev": {
     "psr-4": {
